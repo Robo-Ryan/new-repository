@@ -2,6 +2,7 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Helvetica", sans-serif; /* Ensures all elements use Helvetica */
 }
 
 header,
@@ -12,13 +13,18 @@ footer {
     line-height: 60px
 }
 
+.slogan {
+    font-weight: lighter;
+}
+
 header {
     position: fixed;
     border-bottom: 10px solid #DDAF94;
+    z-index: 1000;
   }
 
 footer {
-    position: absolute;
+    position: relative;
     margin-top: 0;
     bottom: 0;
 }
@@ -32,11 +38,26 @@ main {
     padding: 60px 0 60px 0;
   }
 
+  nav ul {
+    text-align: right;
+    list-style: none; /* Removes bullet points */
+    padding: 0;       /* Removes padding */
+    margin: 0;        /* Removes margin */
+}
+
 nav ul li {
     display: inline;
-    background-color: lightcoral;
+    background-color: rgb(128, 139, 240);
     position: relative;
     left: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
+
 }
 
 h1 {
