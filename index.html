@@ -1,23 +1,44 @@
 <!Doctype html>
 <html>
     <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Ryan's website</title>
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
         <header>
+        <!-- Nav bar -->
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="github.html">Github</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
+
+        <!-- section 1: Hero Image -->
         <main>
-            <h1>Welcome to my website</h1>
-            <p>This is a simple website created using HTML and CSS.</p>
+            <h1>Welcome to Ryanopolis!</h1>
+            <section>
+                <img src="assets/images/pikachu.png" alt="pokemon">
+            <p>We love pokemon here</p>
+            </section>
         </main>
+
+        <!-- section 2: Contact Me -->
+            <section>
+                <h2>Contact Me</h2>
+                <form action="contact.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+    </body>
+        
+        <!-- footer -->
         <footer>
             <p>&copy; 2021</p>
         </footer>
